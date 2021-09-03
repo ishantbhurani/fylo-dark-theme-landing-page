@@ -229,14 +229,14 @@ button {
   align-items: center;
   justify-content: center;
   gap: 3em;
-  margin-bottom: 10em;
+  margin-bottom: 23em;
 }
 
 .testimonials::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -2.5em;
-  left: -.5em;
+  left: -0.5em;
   width: 4.5em;
   height: 3.5em;
   background: url(./images/bg-quotes.png) no-repeat;
@@ -246,7 +246,7 @@ button {
 .testimonial {
   background-color: var(--color-testimonials-bg);
   padding: 3em 2em 2em;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .user {
@@ -255,16 +255,16 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .user-name {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 .user-job {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .user-image-wrapper {
@@ -272,4 +272,56 @@ button {
   height: 2em;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.sign-up {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: -10em;
+  transform: translate(-50%);
+  background-color: var(--color-email-bg);
+  padding: 3.5em 3em 3em;
+  text-align: center;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em -0.5em #000;
+}
+
+.sign-up-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.sign-up-desc {
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+}
+
+.email-input {
+  width: 60%;
+  padding: 0 2em;
+  border-radius: 5em;
+  outline: transparent;
+  border: transparent;
+}
+
+.sign-up-submit {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 1em 2em;
+  border-radius: 5em;
+}
+
+/* for testing */
+footer {
+  position: relative;
+  height: 50vh;
+  background-color: var(--color-footer-bg);
 }
