@@ -282,7 +282,6 @@ button {
   transform: translate(-50%);
   background-color: var(--color-email-bg);
   padding: 3.5em 3em 3em;
-  text-align: center;
   border-radius: 0.5em;
   box-shadow: 0 0.5em 1em -0.5em #000;
 }
@@ -290,11 +289,13 @@ button {
 .sign-up-title {
   font-size: 2em;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .sign-up-desc {
   padding: 0 2em;
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .sign-up-form {
@@ -312,11 +313,28 @@ button {
   border: transparent;
 }
 
+.error {
+  font-size: .8rem;
+  margin: .5em 6em 0;
+  color: var(--color-red);
+  font-weight: bold;
+  opacity: 0;
+}
+
+.sign-up-form:invalid + .error {
+  opacity: 1;
+}
+
 .sign-up-submit {
   background: var(--color-blue);
   color: var(--color-white);
   padding: 1em 2em;
   border-radius: 5em;
+  transition: all .2s ease-in-out;
+}
+
+.sign-up-submit:hover {
+  background-color: var(--color-cyan);
 }
 
 footer {
