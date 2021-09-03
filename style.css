@@ -219,3 +219,57 @@ button {
   color: var(--color-white);
   border-color: var(--color-white);
 }
+
+.testimonials {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  margin-bottom: 10em;
+}
+
+.testimonials::before {
+  position: absolute;
+  content: '';
+  top: -2.5em;
+  left: -.5em;
+  width: 4.5em;
+  height: 3.5em;
+  background: url(./images/bg-quotes.png) no-repeat;
+  z-index: -1;
+}
+
+.testimonial {
+  background-color: var(--color-testimonials-bg);
+  padding: 3em 2em 2em;
+  border-radius: .5em;
+}
+
+.user {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5em;
+}
+
+.user-name {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.user-job {
+  font-size: .7rem;
+}
+
+.user-image-wrapper {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  overflow: hidden;
+}
