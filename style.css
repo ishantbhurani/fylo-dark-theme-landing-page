@@ -319,9 +319,92 @@ button {
   border-radius: 5em;
 }
 
-/* for testing */
 footer {
   position: relative;
-  height: 50vh;
   background-color: var(--color-footer-bg);
+}
+
+.footer-container {
+  padding: 15em 6em 7em 8em;
+}
+
+.footer-container .logo-wrapper {
+  margin-bottom: 2em;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-wrapper {
+  width: 58%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
+.address-wrapper, .phone-wrapper, .email-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.address-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-items: flex-start;
+}
+
+.address-wrapper img {
+  margin-top: .5em;
+}
+
+.phone-wrapper img {
+  margin-left: -.5em;
+}
+
+.phone-wrapper, .email-wrapper {
+  grid-column: 2 / 3;
+}
+
+.quick-links-item {
+  width: max-content;
+  margin-bottom: 1em;
+}
+
+.quick-links-item:hover {
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.social-link {
+  width: 2em;
+  height: 2em;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.social-link:hover {
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+}
+
+footer img {
+  width: unset;
 }
