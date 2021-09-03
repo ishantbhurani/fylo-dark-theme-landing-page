@@ -27,6 +27,8 @@ body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+  background: var(--color-bg);
+  color: var(--color-white);
 }
 
 h1,
@@ -38,4 +40,47 @@ h6,
 button,
 header {
   font-family: "Raleway", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: var(--color-email-bg);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+img {
+  width: 100%;
+}
+
+.logo-wrapper {
+  width: 12em;
+}
+
+.header-nav-list {
+  width: 18em;
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: end;
+}
+
+.header-nav-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
