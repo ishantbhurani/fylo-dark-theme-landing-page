@@ -314,8 +314,8 @@ button {
 }
 
 .error {
-  font-size: .8rem;
-  margin: .5em 6em 0;
+  font-size: 0.8rem;
+  margin: 0.5em 6em 0;
   color: var(--color-red);
   font-weight: bold;
   opacity: 0;
@@ -330,7 +330,7 @@ button {
   color: var(--color-white);
   padding: 1em 2em;
   border-radius: 5em;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .sign-up-submit:hover {
@@ -365,7 +365,9 @@ footer {
   place-items: center;
 }
 
-.address-wrapper, .phone-wrapper, .email-wrapper {
+.address-wrapper,
+.phone-wrapper,
+.email-wrapper {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -380,14 +382,15 @@ footer {
 }
 
 .address-wrapper img {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .phone-wrapper img {
-  margin-left: -.5em;
+  margin-left: -0.5em;
 }
 
-.phone-wrapper, .email-wrapper {
+.phone-wrapper,
+.email-wrapper {
   grid-column: 2 / 3;
 }
 
@@ -415,7 +418,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .social-link:hover {
@@ -425,4 +428,131 @@ footer {
 
 footer img {
   width: unset;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0;
+  }
+
+  .hero-container {
+    width: 80%;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 1.8em 0;
+  }
+
+  .features {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .how-it-works {
+    flex-direction: column;
+  }
+
+  .how-it-works-info {
+    width: 100%;
+  }
+
+  .how-it-works-title {
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
+  .how-it-works-link {
+    font-size: 0.875rem;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonials::before {
+    width: 1.5em;
+    height: 1.5em;
+    background-size: contain;
+    top: -1.2em;
+    left: 0.5em;
+  }
+
+  .testimonial-text {
+    font-size: 0.8rem;
+  }
+
+  .sign-up {
+    width: 90%;
+    padding: 3em 2em 2em;
+    top: -15em;
+  }
+
+  .sign-up-title {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+  }
+
+  .sign-up-desc {
+    padding: 0;
+  }
+
+  .sign-up-form {
+    flex-direction: column;
+  }
+
+  .email-input {
+    width: 100%;
+    padding: 1em 2em;
+  }
+
+  .footer-container {
+    padding: 17em 2em 3em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+
+  .phone-wrapper img {
+    margin: 0;
+  }
+
+  .quick-links:first-of-type {
+    margin-top: 3em;
+  }
+
+  .social-links {
+    margin: 2em auto 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    padding: 2em;
+  }
+
+  .logo-wrapper {
+    width: 7em;
+  }
+
+  .header-nav-list {
+    width: 13em;
+    font-size: 1rem;
+  }
 }
